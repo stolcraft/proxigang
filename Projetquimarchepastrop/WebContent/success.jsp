@@ -21,8 +21,7 @@ ArrayList<Personne> listePersonne = conseillerDao.listeDesClients();
 <title>Profil</title>
 </head>
 <body>
-	<h1>Vous êtes sur votre page de profil</h1>
-	<p>Connexion réussie!!!!</p>
+	<h1>Liste des clients</h1>
 	
 	<table class="table table-striped table-dark">
   <thead>
