@@ -1,5 +1,9 @@
 package eu.ensup.formulaire.domaine;
 
+/**
+ * @author benja
+ * Classe métier Personne
+ */
 public class Personne {
 
 	private String id;

@@ -11,10 +11,21 @@ import eu.ensup.formulaire.domaine.Personne;
 
 
 
+/**
+ * @author benja
+ * Classe ConseillerDao
+ * Utilise {@link AccesBd}
+ * Classe contenant toute les methode DAO liées au Conseiller
+ */
 public class ConseillerDao extends AccesBd {
 
 	ResultSet rs = null;
 
+	/**
+	 * @param personne
+	 * creationClient() Methode permettant la création d'un client
+	 * @return
+	 */
 	public boolean creationClient(Personne personne) {
 		// TODO Auto-generated method stub
 		seConnecter();
@@ -35,6 +46,11 @@ public class ConseillerDao extends AccesBd {
 
 	}
 
+	/**
+	 * @param id
+	 * afficherInfoClient() methode permettant l'affichage des information d'un client
+	 * @return
+	 */
 	public Personne afficherInfoClient(String id) {
 		// TODO Auto-generated method stub
 		Personne personne = new Personne();
@@ -61,6 +77,11 @@ public class ConseillerDao extends AccesBd {
 		return personne;
 	}
 
+	/**
+	 * @param personne {@link Personne}
+	 * modificationClient() Methode permettant la modification d'une personne
+	 * @return
+	 */
 	public boolean modificationClient(Personne personne) {
 
 		seConnecter();
@@ -85,6 +106,11 @@ public class ConseillerDao extends AccesBd {
 		return true;
 	}
 
+	/**
+	 * @param id
+	 * suppressionClient() Méthode supprimant un Client
+	 * @return
+	 */
 	public boolean suppressionClient(String id) {
 		seConnecter();
 		try {
@@ -104,6 +130,10 @@ public class ConseillerDao extends AccesBd {
 		return true;
 	}
 
+	/**
+	 * @return
+	 * listeDesClients() Méthode permettant d'afficher la liste des clients.
+	 */
 	public ArrayList<Personne> listeDesClients() {
 
 		String id;
@@ -146,6 +176,11 @@ public class ConseillerDao extends AccesBd {
 		return listePersonne;
 	}
 
+	/**
+	 * @param id
+	 * listeDesComptes() Méthode permettant d'afficher la liste des comptes.
+	 * @return
+	 */
 	public ArrayList<Compte> listeDesComptes(String id) {
 		String numCompte;
 		Float solde;

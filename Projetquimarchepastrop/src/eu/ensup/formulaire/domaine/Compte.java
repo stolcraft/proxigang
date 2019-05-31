@@ -2,6 +2,10 @@ package eu.ensup.formulaire.domaine;
 
 import java.sql.Date;
 
+/**
+ * @author benja
+ * Classe métier Compte
+ */
 public class Compte {
 
 	private String numCompte;
@@ -15,6 +19,13 @@ public class Compte {
 	
 	
 
+	/**
+	 * Methode constructeur de Compte
+	 * @param numCompte
+	 * @param solde
+	 * @param dateOuverture
+	 * @param type
+	 */
 	public Compte(String numCompte, Float solde, Date dateOuverture, boolean type) {
 		super();
 		this.numCompte = numCompte;

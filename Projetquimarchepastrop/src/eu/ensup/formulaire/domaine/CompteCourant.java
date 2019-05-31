@@ -1,5 +1,10 @@
 package eu.ensup.formulaire.domaine;
 
+/**
+ * @author benja
+ * Classe métier CompteCourant
+ * Utilise {@link Compte}
+ */
 public class CompteCourant extends Compte {
 
 	private float decouvert;

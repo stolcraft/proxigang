@@ -1,5 +1,10 @@
 package eu.ensup.formulaire.domaine;
 
+/**
+ * @author benja
+ * Classe métier Conseiller
+ * Utilise la Classe {@link Personne}
+ */
 public class Conseiller extends Personne {
 
 	private boolean gerant;

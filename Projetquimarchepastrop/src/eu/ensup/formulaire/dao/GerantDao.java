@@ -8,10 +8,20 @@ import eu.ensup.formulaire.domaine.Personne;
 
 
 
+/**
+ * @author benja
+ * Classe GerantDao
+ * Utilise {@link AccesBd}
+ * Classe contenant toute les methode DAO liées au Gérant
+ */
 public class GerantDao extends AccesBd {
 
 	ResultSet rs = null;
 	
+	/**
+	 * @return
+	 * listeDesConseillers() Méthode permettant d'afficher la liste des conseillers.
+	 */
 	public ArrayList<Personne> listeDesConseillers() {
 
 		String id;

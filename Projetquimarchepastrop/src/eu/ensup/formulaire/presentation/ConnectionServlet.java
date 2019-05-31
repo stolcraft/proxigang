@@ -18,14 +18,18 @@ import eu.ensup.formulaire.domaine.Conseiller;
 /**
  * Servlet implementation class Connection
  */
+/**
+ * @author benja
+ *
+ */
 @WebServlet("/Connection")
-public class Connection extends HttpServlet {
+public class ConnectionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Connection() {
+	public ConnectionServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

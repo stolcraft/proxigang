@@ -7,6 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.LogManager;
 
+/**
+ * @author benja
+ * Classe AccesBd
+ * Permet d'interagire avec la BDD
+ */
 public class AccesBd {
 
 	// static final Logger logger = LogManager.getLogger(AccesBd.class.);
@@ -15,6 +20,11 @@ public class AccesBd {
 
 	// TODO Connexion Ã  la BD
 
+	/**
+	 * @return
+	 * Méthode seConnecter()
+	 * Permet de se connecter à la BDD
+	 */
 	public static Connection seConnecter() {
 		
 		//
@@ -51,6 +61,10 @@ public class AccesBd {
 
 	// TODO DÃ©connexion Ã  la BD
 
+	/**
+	 * Méthode seDeconnecter()
+	 * Permet de se déconnecter de la BDD
+	 */
 	public void seDeconnecter() {
 		try {
 			cn.close();

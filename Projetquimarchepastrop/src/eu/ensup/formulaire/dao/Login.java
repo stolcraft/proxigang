@@ -11,8 +11,19 @@ import eu.ensup.formulaire.domaine.Conseiller;
 
 
 
+/**
+ * @author benja
+ * Classe Login
+ * Classe permettant aux différents utilisateur de s'identifier
+ */
 public class Login {
 
+	/**
+	 * @param login
+	 * @param pwd
+	 * Méthode permettant à l'utilisateur de s'identifer
+	 * @return
+	 */
 	public static List<Conseiller> loginConseiller(String login,String pwd){
 
 		List<Conseiller>listConseiller = new ArrayList();
